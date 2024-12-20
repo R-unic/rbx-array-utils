@@ -28,7 +28,9 @@ export function removeDuplicates<T extends defined>(array: T[]): T[] {
 export function flatten<T extends defined>(array: (T | T[])[]): T[] {
 	const result: T[] = [];
 	for (const value of array) {
-		if (typeOf(value) === "table" && (<T[]>value).size() > 0) {
+		if (typeOf(value) === "table") {
+			if ((<T[]>value).size() === 0) continue;
+
 			const flattenedSubtable = flatten(<T[]>value);
 			for (const subValue of flattenedSubtable)
 				result.push(subValue);
