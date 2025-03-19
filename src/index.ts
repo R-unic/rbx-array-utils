@@ -1,4 +1,4 @@
-const { max, min, floor, random } = math;
+const { max, min, random } = math;
 
 export function randomElement<T extends defined>(array: T[]): T {
   return array[random(1, array.size()) - 1];
