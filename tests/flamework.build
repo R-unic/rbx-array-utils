@@ -1,0 +1,8 @@
+{
+	"version": 1,
+	"flameworkVersion": "1.2.4",
+	"identifiers": {
+		"test:out/tests/src/spec@ArrayUtilsTest": "tests/src/spec@ArrayUtilsTest"
+	},
+	"metadata": {}
+}
